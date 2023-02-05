@@ -46,7 +46,7 @@ img{
     padding: 10px;
     height: 100%;
     width:60%;
-    display: inline-block;
+    display: flex;
     margin: 0 auto;
     text-align: left;
 
