@@ -31,7 +31,9 @@ img{
 	height: 180px;
 }
 
-
+main{
+	display: flex;
+}
 
 .left{
 	background-color: #378805;
@@ -46,7 +48,7 @@ img{
     padding: 10px;
     height: 100%;
     width:60%;
-    display: flex;
+    display: inline-block;
     margin: 0 auto;
     text-align: left;
 
