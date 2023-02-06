@@ -31,7 +31,9 @@ img{
 	height: 180px;
 }
 
-
+main{
+	display: flex;
+}
 
 .left{
 	background-color: #378805;
@@ -65,4 +67,40 @@ nav a{
 .active{
 	background-color: #f4f4f4;
 	opacity: 100%;
+}
+
+table{
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+}
+
+th {
+	padding: 10px;
+	margin: 15px;
+  	text-align: center; 
+  	background-color: #75975e;
+  	color: #FFFFFF;
+  	border: solid 1px black;
+  	border-bottom: solid 3px black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    opacity: 1;
+}
+
+tbody>tr>:nth-child(1){
+	text-align:left;
+}
+
+td{
+	padding: 10px;
+	margin: 15px;
+  	background-color: #b3cf99;
+  	color: #1C1C1C;
+}
+tr{
+	opacity: 0.8;
+	text-align: center;
+}
+
+tr:hover{ opacity: 100%;
 }
