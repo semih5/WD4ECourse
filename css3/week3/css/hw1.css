@@ -85,6 +85,9 @@ th {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
+thead>tr{
+	opacity: 100%;
+}
 
 tbody>tr>:nth-child(1){
 	text-align:left;
@@ -104,4 +107,4 @@ tr{
 tr:hover{ opacity: 100%;
 }
 
-thead>tr {opacity: 100%;}
+
