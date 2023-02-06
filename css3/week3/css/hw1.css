@@ -84,7 +84,7 @@ th {
   	border-bottom: solid 3px black;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    opacity: 1;
+    opacity: 100%;
 }
 
 tbody>tr>:nth-child(1){
@@ -104,3 +104,5 @@ tr{
 
 tr:hover{ opacity: 100%;
 }
+
+thead>tr {opacity: 100%;}
