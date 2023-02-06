@@ -1,28 +1,28 @@
-body{
+body {
 	margin: 10px;
 	padding: 10px;
 }
 
-header{
+header {
 	background-color: #989898;
 	background-image: url("../images/flywheel.jpg");
 	padding: 10px;
 }
 
 
-h1{
+h1 {
 	color: #FFFFFF;
 	text-align: center;
 	font-size: 150%;
 	text-transform: uppercase;
 }
 
-h2{
+h2 {
 	font-size: 150%;
 }
-	
 
-img{	
+
+img {
 	border: solid 3px black;
 	float: left;
 	margin: 35px;
@@ -31,30 +31,30 @@ img{
 	height: 180px;
 }
 
-main{
+main {
 	display: flex;
 }
 
-.left{
+.left {
 	background-color: #378805;
-    padding: 10px;
-    height: 100%;
-    width:25%;
-    display: inline-block;
-    margin: 0 auto;
+	padding: 10px;
+	height: 100%;
+	width: 25%;
+	display: inline-block;
+	margin: 0 auto;
 }
 
-.right{	
-    padding: 10px;
-    height: 100%;
-    width:60%;
-    display: inline-block;
-    margin: 0 auto;
-    text-align: left;
+.right {
+	padding: 10px;
+	height: 100%;
+	width: 60%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
 
 }
 
-nav a{
+nav a {
 	display: inline-block;
 	background-color: #dddddd;
 	color: #080808;
@@ -64,12 +64,13 @@ nav a{
 	padding: 25px 80px;
 	opacity: 70%;
 }
-.active{
+
+.active {
 	background-color: #f4f4f4;
 	opacity: 100%;
 }
 
-table{
+table {
 	font-family: Arial, Helvetica;
 	font-weight: bold;
 }
@@ -77,34 +78,39 @@ table{
 th {
 	padding: 10px;
 	margin: 15px;
-  	text-align: center; 
-  	background-color: #75975e;
-  	color: #FFFFFF;
-  	border: solid 1px black;
-  	border-bottom: solid 3px black;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+	text-align: center;
+	background-color: #75975e;
+	color: #FFFFFF;
+	border: solid 1px black;
+	border-bottom: solid 3px black;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
-thead>tr{
+
+thead>tr {
 	opacity: 100%;
 }
 
-tbody>tr>:nth-child(1){
-	text-align:left;
+tbody>tr>:nth-child(1) {
+	text-align: left;
 }
 
-td{
+td {
 	padding: 10px;
 	margin: 15px;
-  	background-color: #b3cf99;
-  	color: #1C1C1C;
+	background-color: #b3cf99;
+	color: #1C1C1C;
 }
-tr{
+
+tr {
 	opacity: 0.8;
 	text-align: center;
 }
 
-tr:hover{ opacity: 100%;
+tr:hover {
+	opacity: 100%;
 }
 
-
+thead>tr {
+	opacity: 100%;
+}
