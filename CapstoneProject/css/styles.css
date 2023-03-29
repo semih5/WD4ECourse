@@ -2,6 +2,7 @@
   --main-color: #f6f6e9;
   --navbar-footer: #fd7725;
   --home: #3187c0;
+  --contact: #13334c;
 }
 html {
   scroll-behavior: smooth;
@@ -189,7 +190,7 @@ section {
 }
 
 .contact h2 {
-  color: #13334c;
+  color: var(--contact);
 }
 .contact img {
   width: 80%;
@@ -200,7 +201,9 @@ section {
   list-style-type: none;
   font-size: 100%;
 }
-
+.contactlink a {
+  font-weight: 700;
+}
 .project-tile {
   flex-direction: column;
   display: flex;
@@ -225,11 +228,11 @@ section {
   aspect-ratio: 4/3;
 }
 .fa {
-  color: var(--navbar-footer);
+  color: var(--contact);
   padding-right: 20px;
 }
 .contactlink a {
-  color: var(--navbar-footer);
+  color: var(--contact);
   text-decoration: none;
   text-align: center;
 }
@@ -245,7 +248,7 @@ section {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
-  background: var(--navbar-footer);
+  background: var(--contact);
   border-radius: 50px;
 }
 .overlay {
