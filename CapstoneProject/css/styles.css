@@ -28,7 +28,11 @@ h3 {
 .home {
   color: #ffffff;
   background-color: var(--home);
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+}
+.home .row {
+  padding-top: 20vh;
 }
 .home p {
   opacity: 0.8;
@@ -107,6 +111,9 @@ p {
   .profile {
     display: none;
   }
+  .contact img {
+    display: none;
+  }
 }
 .profile {
   object-fit: cover;
@@ -116,6 +123,22 @@ p {
   transform: rotate(-8deg);
 }
 
+section {
+  padding: 40px;
+}
+
+.contact h2 {
+  color: #13334c;
+}
+.contact img {
+  width: 80%;
+  max-width: 500px;
+}
+.contact li {
+  padding: 10px;
+  list-style-type: none;
+  font-size: 100%;
+}
 /* footer styles */
 .footer {
   background: var(--navbar-footer);
