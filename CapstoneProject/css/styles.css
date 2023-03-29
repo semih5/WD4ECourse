@@ -146,7 +146,7 @@ section {
 .project-tile {
   flex-direction: column;
   display: flex;
-  height: auto;
+  height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -164,7 +164,7 @@ section {
   object-fit: cover;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4/3;
 }
 
 /* send a message form */
