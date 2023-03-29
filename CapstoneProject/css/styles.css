@@ -103,6 +103,9 @@ p {
   padding: 24px 10px;
   text-decoration: none;
 }
+.topnav .icon {
+  display: none;
+}
 
 .rowp {
   display: grid;
@@ -142,6 +145,7 @@ p {
     display: none;
   }
 }
+
 .rowa {
   display: grid;
   grid-template-columns: auto auto;
