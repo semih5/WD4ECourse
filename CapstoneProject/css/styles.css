@@ -3,9 +3,9 @@
   --navbar-footer: #fd7725;
   --home: #3187c0;
 }
-/*html {
+html {
   scroll-behavior: smooth;
-}*/
+}
 main {
   margin-top: 50px;
 }
@@ -19,7 +19,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  font-size: 150%;
+  font-size: 180%;
 }
 h3 {
   text-align: center;
@@ -40,10 +40,13 @@ h3 {
 }
 .description ul,
 p {
-  font-size: 90%;
+  font-size: 120%;
 }
 .description p {
-  text-align: center;
+  margin-bottom: 10px;
+}
+.description ul li {
+  list-style-type: circle;
 }
 
 /* nav styles*/
@@ -124,7 +127,7 @@ p {
 }
 
 section {
-  padding: 40px;
+  padding: 50px;
 }
 
 .contact h2 {
@@ -143,7 +146,7 @@ section {
 .project-tile {
   flex-direction: column;
   display: flex;
-  height: 100%;
+  height: auto;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -160,8 +163,8 @@ section {
   max-width: 400px;
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
+  height: auto;
+  aspect-ratio: 4 / 3;
 }
 
 /* send a message form */
