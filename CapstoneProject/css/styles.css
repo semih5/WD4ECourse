@@ -2,7 +2,7 @@
   --main-color: #f6f6e9;
   --navbar-footer: #fd7725;
   --home: #3187c0;
-  --contact: #13334c;
+  --contact: #102c41;
 }
 html {
   scroll-behavior: smooth;
@@ -18,11 +18,12 @@ body {
 /*typewriter*/
 .animation_text p {
   font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
   color: #ffffff;
 }
 
 .animation_text p span {
-  color: var(--navbar-footer);
+  color: var(--contact);
 }
 
 @media (max-width: 768px) {
