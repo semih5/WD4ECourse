@@ -29,7 +29,7 @@ h3 {
   color: #ffffff;
   background-color: var(--home);
   height: 100vh;
-  max-height: 100vh;
+  max-height: 90vh;
 }
 .home .row {
   padding-top: 20vh;
@@ -56,12 +56,13 @@ p {
   display: flex;
   background-color: var(--navbar-footer);
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
   top: 0;
   right: 0;
   left: 0;
   margin-top: 0;
 }
+
 .nav li {
   float: left;
   list-style-type: none;
@@ -71,9 +72,10 @@ p {
   position: sticky;
 }
 .nav li a {
+  display: block;
   text-align: center;
   color: white;
-  padding: 14px 16px;
+  padding: 24px 10px;
   text-decoration: none;
 }
 
@@ -159,6 +161,7 @@ section {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
 }
 
 /* send a message form */
@@ -243,6 +246,7 @@ textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
+  font-family: Montserrat;
   resize: vertical;
 }
 input[type="submit"] {
