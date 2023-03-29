@@ -31,8 +31,11 @@ h3 {
   height: 100vh;
   max-height: 90vh;
 }
-.home .row {
+.home .rowa {
   padding-top: 20vh;
+  padding-left: 25vh;
+  padding-right: 20vh;
+  align-items: center;
 }
 .home p {
   opacity: 0.8;
@@ -64,28 +67,27 @@ p {
   right: 0;
   left: 0;
   margin-top: 0;
+  padding-left: 0;
 }
 
 .nav li {
-  float: left;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  position: sticky;
 }
 .nav li a {
   display: block;
   text-align: center;
+  font-weight: 700;
   color: white;
   padding: 24px 10px;
   text-decoration: none;
 }
 
-.row {
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 200px;
+.rowp {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
   padding: 10px;
   place-items: center;
   max-width: 1200px;
@@ -94,9 +96,9 @@ p {
   justify-content: center;
 }
 @media screen and (max-width: 1024px) {
-  .row {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
+  .rowp {
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 50px;
     padding: 10px;
     place-items: center;
@@ -105,7 +107,43 @@ p {
   }
 }
 @media screen and (max-width: 400px) {
-  .row {
+  .rowp {
+    grid-template-columns: auto;
+    gap: 30px;
+    padding: 10px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .profile {
+    display: none;
+  }
+  .contact img {
+    display: none;
+  }
+}
+.rowa {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  padding: 10px;
+  place-items: top center;
+  max-width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .rowa {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding: 10px;
+    place-items: top center;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .rowa {
     grid-template-columns: auto;
     gap: 30px;
     padding: 10px;
@@ -168,10 +206,20 @@ section {
   height: auto;
   aspect-ratio: 4/3;
 }
+.fa {
+  color: var(--navbar-footer);
+  padding-right: 20px;
+}
+.contactlink a {
+  color: var(--navbar-footer);
+  text-decoration: none;
+  text-align: center;
+}
 
 /* send a message form */
 .box {
-  text-align: center;
+  text-align: left;
+  padding-top: 20px;
 }
 .button {
   padding: 10px 25px;
