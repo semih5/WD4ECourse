@@ -45,9 +45,7 @@ p {
 .description p {
   text-align: center;
 }
-.project-image {
-  max-width: 500px;
-}
+
 /* nav styles*/
 .nav .push {
   margin-right: auto;
@@ -88,7 +86,7 @@ p {
   max-width: 1200px;
   margin: auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .row {
     display: grid;
     grid-template-columns: auto auto;
@@ -139,6 +137,126 @@ section {
   list-style-type: none;
   font-size: 100%;
 }
+
+.project-tile {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navbar-footer);
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 6px 1px rgba(100, 100, 100, 0.3);
+}
+.project-tile:hover {
+  box-shadow: 5px 5px 6px 3px rgba(67, 67, 67, 0.7);
+}
+
+.project-image {
+  max-width: 400px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* send a message form */
+.box {
+  text-align: center;
+}
+.button {
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background: var(--navbar-footer);
+  border-radius: 50px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.wrapper {
+  margin: 70px auto;
+  padding: 20px;
+  background: #e7e7e7;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.wrapper h2 {
+  margin-top: 0;
+  color: #13334c;
+  font-size: 150%;
+}
+.wrapper .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #333;
+}
+.wrapper .close:hover {
+  color: var(--navbar-footer);
+}
+.wrapper .content {
+  max-height: 30%;
+  overflow: auto;
+}
+/*form*/
+
+.container {
+  border-radius: 5px;
+  background-color: #e7e7e7;
+  padding: 20px 0;
+}
+form label {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 100%;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: var(--navbar-footer);
+  color: #fff;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
 /* footer styles */
 .footer {
   background: var(--navbar-footer);
