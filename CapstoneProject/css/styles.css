@@ -83,19 +83,21 @@ p {
 }
 
 .row {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 30px;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 200px;
   padding: 10px;
   place-items: center;
   max-width: 1200px;
   margin: auto;
+  grid-template-columns: repeat(3, minmax(100px, max-content));
+  justify-content: center;
 }
 @media screen and (max-width: 1024px) {
   .row {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
     padding: 10px;
     place-items: center;
     max-width: 1200px;
