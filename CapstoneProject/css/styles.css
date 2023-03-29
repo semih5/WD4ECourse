@@ -6,19 +6,127 @@
 /*html {
   scroll-behavior: smooth;
 }*/
-
+main {
+  margin-top: 50px;
+}
 body {
   background-color: var(--main-color);
   font-family: "Montserrat", "Segoe UI", sans-serif;
   margin: 0;
 }
-nav {
-  background-color: var(--navbar-footer);
+h1 {
+  font-size: 200%;
+}
+h2 {
+  text-align: center;
+  font-size: 150%;
+}
+h3 {
+  text-align: center;
+  font-size: 100%;
+}
+.home {
+  color: #ffffff;
+  background-color: var(--home);
+  min-height: 100vh;
+}
+.home p {
+  opacity: 0.8;
+  margin-top: -20px;
+}
+.description ul,
+p {
+  font-size: 90%;
+}
+.description p {
+  text-align: center;
+}
+.project-image {
+  max-width: 500px;
+}
+/* nav styles*/
+.nav .push {
+  margin-right: auto;
 }
 .nav {
+  z-index: 999;
+  position: fixed;
   display: flex;
+  background-color: var(--navbar-footer);
+  width: 100%;
+  min-height: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 0;
+}
+.nav li {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+}
+.nav li a {
+  text-align: center;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.push {
-  margin-right: auto;
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  padding: 10px;
+  place-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 10px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .row {
+    grid-template-columns: auto;
+    gap: 30px;
+    padding: 10px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .profile {
+    display: none;
+  }
+}
+.profile {
+  object-fit: cover;
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-8deg);
+}
+
+/* footer styles */
+.footer {
+  background: var(--navbar-footer);
+  color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  bottom: 1;
+  position: absolute;
+  text-align: center;
+}
+.footer p {
+  padding: 20px 5px;
 }
