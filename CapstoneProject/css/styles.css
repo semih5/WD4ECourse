@@ -28,7 +28,7 @@ body {
 
 @media (max-width: 768px) {
   .animation_text p {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -58,6 +58,7 @@ h3 {
 .columndesc {
   width: 400px;
 }
+
 .home p {
   margin-top: -20px;
 }
@@ -172,8 +173,12 @@ p {
     gap: 30px;
     padding: 10px;
     place-items: center;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 400px;
+    margin-left: -100px;
+  }
+  .columndesc {
+    width: 250px;
+    margin-left: -50px;
   }
   .profile {
     display: none;
