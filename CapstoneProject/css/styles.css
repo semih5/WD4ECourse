@@ -174,11 +174,13 @@ p {
     padding: 10px;
     place-items: center;
     max-width: 400px;
-    margin-left: -100px;
   }
   .columndesc {
     width: 250px;
-    margin-left: -50px;
+    margin-left: -150px;
+  }
+  .whoAmI {
+    text-align: center;
   }
   .profile {
     display: none;
