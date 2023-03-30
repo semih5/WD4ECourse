@@ -167,17 +167,16 @@ p {
     margin: auto;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   .rowa {
     grid-template-columns: auto;
     gap: 30px;
-    padding: 10px;
     place-items: center;
-    max-width: 400px;
+    max-width: 375px;
   }
   .columndesc {
-    width: 250px;
-    margin-left: -150px;
+    width: 230px;
+    margin-left: -160px;
   }
   .whoAmI {
     text-align: center;
@@ -187,6 +186,10 @@ p {
   }
   .contact img {
     display: none;
+  }
+  .contact {
+    width: 350px;
+    margin-left: -80px;
   }
 }
 .profile {
